@@ -7,9 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface ViewController : UIViewController
+{
+    UILabel *label;
+    IBOutlet UITextView *textView;
+    NSString *string;
+    CGRect rect;
+    IBOutlet UITextField *textField;
+    IBOutlet UIButton *convertButton;
+    IBOutlet UIButton *back;
+    IBOutlet UIButton *copy;
+}
 
-
+-(IBAction)back;
+-(IBAction)copy;
+-(IBAction)convertButton;
+-(void)convert;
 @end
 
